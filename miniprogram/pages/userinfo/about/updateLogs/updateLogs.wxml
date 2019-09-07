@@ -2,11 +2,20 @@
 <view class="padding text-center">
   <view class="padding radius bg-white shadow-blur">
     <view class="cu-timeline">
+      <view class="cu-item" style="color:#ED8B94">
+        <view class="content shadow" style="background-color:#ED8B94">
+          <view class="cu-capsule radius" style="background-color:#F5E9E2">
+            <view class="cu-tag bg-white text-grey">v2.0.3</view>
+            <view class="cu-tag line-grey">2019/09/07</view>
+          </view>
+          <view class="margin-top-sm text-content text-white">错误修复与优化体验</view>
+        </view>
+      </view>
       <view class="cu-item text-grey">
         <view class="bg-grey content shadow">
-          <view class="cu-capsule radius">
+          <view class="cu-capsule radius" style="background-color:#F5E9E2">
             <view class="cu-tag bg-white text-grey">v2.0.0</view>
-            <view class="cu-tag line-white">2019/09/07</view>
+            <view class="cu-tag line-grey">2019/09/07</view>
           </view>
           <view class="margin-top-sm text-content">2.0新版本上线</view>
         </view>

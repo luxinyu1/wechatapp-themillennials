@@ -13,6 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function() {
+    wx.setNavigationBarTitle({
+      title: "往期推送"
+    })
     let that = this;
     wx.showLoading({
       title: "加载中",

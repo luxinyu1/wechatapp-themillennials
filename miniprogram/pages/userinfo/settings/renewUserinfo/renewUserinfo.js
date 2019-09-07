@@ -13,7 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    wx.setNavigationBarTitle({
+      title: "更新个人信息"
+    })
   },
 
   /**
@@ -58,12 +60,6 @@ Page({
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
-  },
   getUserInfo(e) {
     let _id = wx.getStorageSync("_id");
     const userInfo = e.detail.userInfo;
@@ -75,7 +71,7 @@ Page({
       key: "nickName",
       data: userInfo.nickName,
     })
-    db.collection("userinfo").doc("_id").update({
+    db.collection("userinfo").doc(_id).update({
         data: {
           avatarUrl: userInfo.avatarUrl,
           nickName: userInfo.nickName,
@@ -87,11 +83,10 @@ Page({
         }
       }).then(res => {
         console.log(res);
-        wx.showModal({
-          title: "提示",
-          content: "用户数据已更新",
-          showCancel: false
+        wx.showToast({
+          title: "更新成功",
         })
+        wx.navigateBack({});
       })
       .catch(console.error)
   }
