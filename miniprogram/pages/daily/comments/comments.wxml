@@ -1,0 +1,29 @@
+<!--pages/daily/comments/comments.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="cu-form-group">
+    <textarea maxlength="-1" placeholder="我想说点什么" name="text" value="{{inputText}}"></textarea>
+    <button class="cu-btn line-gray round" form-type="submit">留言</button>
+  </view>
+</form>
+<view class="cu-list menu-avatar comment solids-top">
+  <block wx:for="{{messages}}" wx:key="key">
+    <view class="cu-item">
+      <view class="cu-avatar round" style="background-image:url({{item.avatarUrl}});"></view>
+      <view class="content">
+        <view class="text-grey">{{item.nickName}}</view>
+        <view class="text-gray text-content text-df">
+          {{item.text}}
+        </view>
+        <!--未开放功能：点赞评论
+        <view>
+          <text class="cuIcon-appreciate{{likeStatus}}"></text>
+          <text class="cuIcon-messagefill text-gray margin-left-sm"></text>
+        </view>
+        -->
+      </view>
+    </view>
+  </block>
+  <view class="padding text-center" style="font-size:15px; color:grey;">
+    ---没有更多啦，下拉刷新试试吧(/▽＼)---
+  </view>
+</view>

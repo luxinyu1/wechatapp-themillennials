@@ -1,0 +1,15 @@
+<!--pages/userinfo/settings/settings.wxml-->
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  <view class="cu-item arrow">
+    <navigator class="content" url="/pages/userinfo/settings/renewUserinfo/renewUserinfo" hover-class="none">
+      <text class="cuIcon-refresh text-orange"></text>
+      <text class="text-grey">更新个人信息</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class="content" url="/pages/userinfo/settings/cleanUserinfo/cleanUserinfo" hover-class="none">
+    <text class="cuIcon-warn text-red"></text>
+    <text class="text-grey">清除个人信息</text>
+    </navigator>
+  </view>
+</view>

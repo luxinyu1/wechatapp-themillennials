@@ -1,0 +1,33 @@
+<view class="padding text-left">
+  <view class="padding radius shadow-blur bg-grey margin-top bg-img" style="background-image:url({{backgroundSrc}});height:90vh;">
+    <view class="dateBlock">
+      <text>{{date}}</text>
+    </view>
+    <view class="sentenceBlock">
+      <text>{{sentenceBlock}}</text>
+    </view>
+    <view class="divider"></view>
+    <view class="informationBlock">{{informationBlock}}</view>
+    <view wx:if="{{musicOnOff}}" class="musicBlockOn" bindtap="musicStatusChanged">
+      <text class="cuIcon-{{iconStatus}} lg text-white"></text>
+      <text class="informationBlock">{{musicSinger}} - {{musicTitle}}</text>
+    </view>
+    <view wx:if="{{!musicOnOff}}" class="musicBlockOff" bindtap="musicStatusChanged">
+      <text class="cuIcon-{{iconStatus}} lg text-white"></text>
+      <text class="informationBlock">{{musicSinger}} - {{musicTitle}}</text>
+    </view>
+    <view class="sideBlock">
+      <view>
+        <navigator url="/pages/daily/comments/comments">
+          <image src="/images/icons/icon_comment.png" style="height:35px" mode="aspectFit"></image>
+        </navigator>
+      </view>
+      <view wx:if="{{loveIconOnOff}}" bindtap="loveIconStatusChanged">
+        <image src="/images/icons/icon_love_on.png" style="height:35px" mode="aspectFit"></image>
+      </view>
+      <view wx:if="{{!loveIconOnOff}}" bindtap="loveIconStatusChanged">
+        <image src="/images/icons/icon_love_off.png" style="height:35px" mode="aspectFit"></image>
+      </view>
+    </view>
+  </view>
+</view>

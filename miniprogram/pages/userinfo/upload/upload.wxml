@@ -1,0 +1,14 @@
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  <view class="cu-item arrow">
+    <navigator class="content" url="/pages/userinfo/upload/wxOfficalAccount/wxOfficalAccount" hover-class="none">
+      <text class="cuIcon-text" style="color:#A9BFD7"></text>
+      <text class="text-grey">公众号推送投稿</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class="content" url="/pages/userinfo/upload/dailyUpload/dailyUpload" hover-class="none">
+      <text class="cuIcon-pic" style="color:#FCC3B2"></text>
+      <text class="text-grey">日签投稿</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="{{avatarUrl}}" class="avatar" mode="widthFix"></image>
+    <view class="text-xl">
+      {{nickName}}
+    </view>
+    <view class="breathingBtn">
+      <view class="margin-top-xs">
+        <button wx:if="{{btn}}" class="cu-btn bg-green round sm" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击授权登录</button>
+      </view>
+    </view>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp" style="color:#8BDDCD">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 文章
+      </view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl">{{loveCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-likefill"></text> 日签
+      </view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl">{{submitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-text"></text> 投稿
+      </view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/userinfo/upload/upload" hover-class="none">
+        <text class="cuIcon-text" style="color:#A9BFD7"></text>
+        <text class="text-grey">投稿</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/userinfo/join/join" hover-class="none">
+        <text class="cuIcon-friendadd" style="color:#F7D98D"></text>
+        <text class="text-grey">入伙</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/userinfo/settings/settings" hover-class="none">
+        <text class="cuIcon-settings" style="color:#C4B6AD"></text>
+        <text class="text-grey">设置</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciate" style="color:#F15A57"></text>
+        <text class="text-grey">赞赏</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/userinfo/about/about" hover-class="none">
+        <text class="cuIcon-info text-grey"></text>
+        <text class="text-grey">关于</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-write text-grey"></text>
+        <text class="text-grey">反馈</text>
+      </button>
+    </view>
+  </view>
+</scroll-view>

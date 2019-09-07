@@ -1,0 +1,10 @@
+<!--pages/userinfo/settings/cleanUserinfo/cleanUserinfo.wxml-->
+<view class="padding text-center">
+  <view class="padding radius bg-white shadow-blur">
+    <image class="warnIcon" src="/images/contents/warn.png" mode="aspectFit"></image>
+    <view class="textarea">
+      <text>点击按钮清除你的用户数据并登出，\n但之前发表的评论和留言不会被删除。</text>
+    </view>
+    <button class="cu-btn line-red" bindtap="cleanUserinfo">确认清除</button>
+  </view>
+</view>

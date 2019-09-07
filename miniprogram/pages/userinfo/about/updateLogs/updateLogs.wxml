@@ -1,0 +1,16 @@
+<!--pages/updateLogs/updateLogs.wxml-->
+<view class="padding text-center">
+  <view class="padding radius bg-white shadow-blur">
+    <view class="cu-timeline">
+      <view class="cu-item text-grey">
+        <view class="bg-grey content shadow">
+          <view class="cu-capsule radius">
+            <view class="cu-tag bg-white text-grey">v2.0.0</view>
+            <view class="cu-tag line-white">2019/09/07</view>
+          </view>
+          <view class="margin-top-sm text-content">2.0新版本上线</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

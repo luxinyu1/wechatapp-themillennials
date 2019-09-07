@@ -1,0 +1,37 @@
+<view wx:for="{{newsList}}" wx:key="key">
+  <view class="cu-card case {{isCard?'no-card':''}}">
+    <view class="cu-item shadow">
+      <view class="tapToBody" id="{{item.content.news_item[0].url}}" bindtap="navigateToBody">
+        <view class="image">
+          <image class="thumb" src="{{item.content.news_item[0].thumb_url}}" mode="aspectFill"></image>
+          <view class="cu-bar bg-shadeBottom">
+            <text class="text-cut">{{item.content.news_item[0].title}}</text>
+          </view>
+        </view>
+        <view class="cu-list">
+          <view class="text-left">
+            <view class="text-left padding-left padding-right padding-top">{{item.content.news_item[0].digest}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="devider"></view>
+      <view class="bottomIconBlock">
+        <view class="discussBlock" id="{{item.content.news_item[0].url}}" bindtap="navigateToDiscuss">
+          <image style="height:25px;" src="/images/icons/icon_comment_grey.png" mode="aspectFit"></image>
+        </view>
+        <view class="markBlock" bindtap="onTapMark">
+          <view class="markIcon">
+            <text class="cuIcon-favor"></text>
+          </view>
+        </view>
+        <navigator url="/pages/index/share/share">
+          <view class="shareBlock">
+            <view class="shareIcon">
+              <text class="cuIcon-share"></text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

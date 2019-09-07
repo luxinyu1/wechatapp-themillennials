@@ -1,0 +1,33 @@
+<view class="padding text-left">
+  <view class="padding radius bg-white shadow-blur">
+    <view class="padding-xs text-xl">加入我们</view>
+    <view class="padding-xs text">如果你成为了我们中的一员，你可以用这些方式创作：</view>
+    <view class="padding-xs text">用微电影反映现实，情感和思考；
+      <br/>
+    </view>
+    <view class="padding-xs text">用照片集铭刻世界；
+      <br/>
+    </view>
+    <view class="padding-xs text">用文字传递思想和感动。
+      <br/>
+    </view>
+    <view class="padding-xs text">......
+      <br/>
+    </view>
+    <view class="padding-xs text">如果你符合这些标准的一条或多条：</view>
+    <view class="padding-xs text">1.善于文字表达，简练准确，逻辑清晰；
+      <br/>
+    </view>
+    <view class="padding-xs text">2.善于发现和记录世界的美好；
+      <br/>
+    </view>
+    <view class="padding-xs text">3.对正在发生的事大多都拥有独立的思考；
+      <br/>
+    </view>
+    <view class="padding-xs text">4.有趣，不仅仅是自觉有趣。
+      <br/>
+    </view>
+    <view class="padding-top-xs padding-left-xs padding-right-xs padding-bottom text">那么，21世纪旗手欢迎你的加入😉</view>
+    <button class="weui-btn" open-type="contact" style="background-color:#87A0C6" type="primary">联系我们 (/▽＼)</button>
+  </view>
+</view>

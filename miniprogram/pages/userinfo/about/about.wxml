@@ -1,0 +1,30 @@
+<!--pages/about/about.wxml-->
+<view class="padding text-left">
+  <view class="padding radius bg-white shadow-blur">
+    <view class="cu-bar bg-white">
+      <view class="action sub-title">
+        <text class="text-xl text-bold text-black">关于/About</text>
+        <text class="bg-yellow"></text>
+      </view>
+    </view>
+    <view class="padding text">21世纪旗手创立以来，我们一直在探寻一种与读者之间更好的交流方式，传递我们的想法和价值观。</view>
+    <view class="padding text">在信息爆炸的时代，用最少的时间阅读最有价值的文字成为了每个人迫切的需求，与此同时，避免陷入流量的漩涡之中，保持理智的思考显得愈加重要。</view>
+    <view class="padding text">我们也坚信，没有人是一座孤岛，音乐，文字和图片的简单组合可以打破人与人之间的坚冰，产生源自内心深处的共鸣。</view>
+    <view class="padding text">以上即为制作这个小程序的初衷。</view>
+  </view>
+</view>
+
+<view class="cu-list menu card-menu margin-bottom-xl shadow-lg radius">
+  <view class="cu-item arrow">
+    <navigator class="content" url="/pages/userinfo/about/updateLogs/updateLogs" hover-class="none">
+      <text class="cuIcon-calendar text-yellow"></text>
+      <text class="text-grey">日志</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <view class="content" bindtap="CopyLink" data-link="https://github.com/luxinyu1/wechatapp-themillennials">
+      <text class="cuIcon-github text-grey"></text>
+      <text class="text-grey">GitHub</text>
+    </view>
+  </view>
+</view>

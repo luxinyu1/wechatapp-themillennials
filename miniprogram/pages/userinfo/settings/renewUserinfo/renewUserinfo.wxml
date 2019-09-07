@@ -1,0 +1,11 @@
+<!--pages/userinfo/settings/renewUserinfo/renewUserinfo.wxml-->
+<view class="padding text-center">
+  <view class="padding radius bg-white shadow-blur">
+    <view>
+      <button class="cu-btn bg-green lg" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我</button>
+    </view>
+    <view class="padding">
+      <text class="textarea">点就对了</text>
+    </view>
+  </view>
+</view>

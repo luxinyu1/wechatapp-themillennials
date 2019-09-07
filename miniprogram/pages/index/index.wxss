@@ -1,0 +1,49 @@
+/* pages/index/index.wxss */
+.thumb {
+  height: 185px;
+}
+.devider{
+  margin-top:10px;
+  margin-bottom:5px;
+  margin-left:4%;
+  margin-right:4%;
+  height:2px;
+  background-color:	#EAEAEA;
+}
+.bottomIconBlock{
+  height:35px;
+  width:100%;
+}
+.discussBlock{
+  float:left;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:2%;
+  height:35px;
+  width:10%;
+}
+.markBlock{
+  float:left;
+  margin-top:5px;
+  margin-bottom:5px;
+  height:35px;
+  width:10%;
+}
+.markIcon{
+  text-align: center;
+  font-size: 22px;
+  color:#989898;
+}
+.shareBlock{
+  float:right;
+  margin-right:3%;
+  margin-top:5px;
+  margin-bottom:5px;
+  height:35px;
+  width:10%;
+}
+.shareIcon{
+  text-align: center;
+  font-size: 22px;
+  color:#989898;
+}

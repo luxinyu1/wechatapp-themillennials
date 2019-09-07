@@ -1,0 +1,4 @@
+/* pages/userinfo/settings/renewUserinfo/renewUserinfo.wxss */
+.textarea{
+  font-size: 12px;
+}

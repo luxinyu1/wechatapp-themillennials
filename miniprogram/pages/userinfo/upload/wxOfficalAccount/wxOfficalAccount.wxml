@@ -1,0 +1,26 @@
+<!--pages/userinfo/upload/wxOfficalAccount/wxOfficalAccount.wxml-->
+<view class="padding text-left">
+  <view class="padding radius bg-white shadow-blur">
+    <view class="padding-xs text-xl">向我们投稿</view>
+    <view class="padding-xs text">你的稿件将有机会在我们的公众号，网站和小程序同步发表</view>
+    <form bindsubmit="formSubmit">
+      <view class="cu-form-group">
+        <view class="title">邮箱</view>
+        <input name="address" placeholder="在这里输入" value="{{addressValue}}"></input>
+      </view>
+      <view class="cu-form-group align-start">
+        <view class="title">稿件</view>
+        <textarea name="article" style="height: 12.5em" maxlength="-1" value="{{textValue}}"placeholder="在粘贴时，可以在段落与段落间加入#分隔"></textarea>
+      </view>
+      <button form-type="submit" style="background-color:#87A0C6" type="primary">发射！(●'◡'●)"</button>
+    </form>
+  </view>
+</view>
+<view class="padding-left padding-right text-left">
+  <view class="padding radius bg-white shadow-blur">
+    <view class="padding-xs text-xl">邮箱投稿</view>
+    <view class="padding-left-xs padding-right-xs padding-top-xs padding-bottom text">也可以通过邮箱附件的方式把稿件发给我们哦</view>
+    <button style="background-color:#87A0C6" type="primary" bindtap="CopyLink" data-link="themillennials@126.com">
+      <text class="cuIcon-copy"></text>复制邮箱地址</button>
+  </view>
+</view>
