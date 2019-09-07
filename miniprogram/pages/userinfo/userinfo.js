@@ -57,6 +57,15 @@ Page({
         wx.showToast({
           title: "自动登录",
         })
+      } else {
+        that.setData({
+          starCount: 0,
+          loveCount: 0,
+          submitTotal: 0,
+          nickName: "未登录",
+          avatarUrl: "/images/icons/icon_anonymous.jpg",
+          btn:true
+        })
       }
     })
     wx.hideLoading();
@@ -86,6 +95,15 @@ Page({
           starCount: res.data[0].starCount,
           loveCount: res.data[0].loveCount,
           submitTotal: res.data[0].submitTotal,
+        })
+      } else {
+        that.setData({
+          starCount: 0,
+          loveCount: 0,
+          submitTotal: 0,
+          nickName: "未登录",
+          avatarUrl: "/images/icons/icon_anonymous.jpg",
+          btn: true
         })
       }
     })

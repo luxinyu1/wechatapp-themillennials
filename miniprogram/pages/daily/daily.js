@@ -37,8 +37,8 @@ Page({
     // 设置了 src 之后会自动播放
     backgroundAudioManager.src = this.data.musicSrc;
     wx.showModal({
-      title: "公告",
-      content: "由于小程序目前处于试运行阶段，日签板块仍然缺少素材,暂时无法做到日更。\n我们十分希望你能通过小程序将符合要求的图片投递给我们。😊",
+      title: "日签征集",
+      content: "日签板块需要更多的素材才能持续运作😊",
       showCancel: true,
       confirmText: "投稿",
       success: function (res) {
