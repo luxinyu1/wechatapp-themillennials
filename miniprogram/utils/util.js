@@ -18,6 +18,11 @@ function formatDate(date) {
   return [year, month, day].map(formatNumber).join('/')
 }
 
+function getHour(date) {
+  var hour = date.getHours();
+  return hour;
+}
+
 function formatNumber(n) {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -29,5 +34,6 @@ module.exports = {
 
 module.exports = {
   formatTime: formatTime,
-  formatDate: formatDate
+  formatDate: formatDate,
+  getHour: getHour
 }

@@ -1,48 +1,65 @@
 /* pages/daily/daily.wxss */
+
 .modal-content {
   text-align: left;
 }
-.dateBlock{
-  font-size:30px;
+
+.dateBlock {
+  font-size: 30px;
 }
-.sentenceBlock{
+
+.sentenceBlock {
   font-size: 18px;
   line-height: 170%;
   padding-bottom: 3px;
 }
-.divider{
+
+.divider {
   width: 170px;
   padding-top: 3px;
   margin-bottom: 3px;
-  border-bottom: 1.5px solid #ffffff;
+  border-bottom: 1.5px solid #fff;
 }
-.informationBlock{
+
+.informationBlock {
   font-size: 12px;
 }
-.musicBlockOn{
+
+.musicBlockOn {
   opacity: 1;
-  animation-name: breathingAnimation;/*CSS3动效*/                         
-  animation-duration: 3s;                         
+  animation-name: breathingAnimation; /*CSS3动效*/
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;    
+  animation-iteration-count: infinite;
 }
-@keyframes breathingAnimation{
-  from {opacity: 1;}
-  50%  {opacity: 0.3;}
-  to   {opacity: 1;}
+
+@keyframes breathingAnimation {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
-.musicBlockOff{
+
+.musicBlockOff {
   opacity: 1;
 }
-.sideBlock{
+
+.sideBlock {
   position: absolute;
   height: 100px;
   width: 35px;
   right: 12px;
   bottom: 0px;
   opacity: 1;
-  animation-name: breathingAnimation;/*CSS3动效*/                         
-  animation-duration: 3s;                         
+  animation-name: breathingAnimation; /*CSS3动效*/
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;    
+  animation-iteration-count: infinite;
 }

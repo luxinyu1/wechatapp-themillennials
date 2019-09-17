@@ -5,15 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
+    greetingMessageChinese:"早安",
     backgroundSrc: "https://7468-themillennials-yw6qu-1259666961.tcb.qcloud.la/backgrounds/3.jpg?sign=e844e2724859c66335abe8bb8d561a2d&t=1567818841",
     date: "",
     sentenceBlock: "簌簌一梦 游于其中\n一游生根 一梦消沉\n日月变换 热闹不断\n一断而立 一幻期颐",
     informationBlock: "Photo by Vincent Zhu. All rights reserved.",
     iconStatus: "musicfill",
-    musicSrc: "https://7468-themillennials-yw6qu-1259666961.tcb.qcloud.la/background_music/%E9%82%B5%E5%A4%B7%E8%B4%9D%20-%20%E6%88%91%E4%BB%AC.mp3?sign=a12d9fd655ccefacdec024f7b39e85d6&t=1567818810",
-    musicTitle: "我们",
-    musicEPName: "我们",
-    musicSinger: "邵夷贝",
+    musicSrc: "https://7468-themillennials-yw6qu-1259666961.tcb.qcloud.la/background_music/Lana%20Del%20Rey%20-%20Summer%20Wine.mp3?sign=3f3cd482360fae5099116ce41c509d50&t=1568730143",
+    musicTitle: "Summer Wine",
+    musicEPName: "Summer Wine",
+    musicSinger: "Lana Del Rey",
     musicCoverImgUrl: "",
     musicOnOff: true,
     loveIconOnOff: false
@@ -23,9 +24,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function() {
-    wx.setNavigationBarTitle({
-      title: "日签"
-    })
+    let hour = util.getHour(new Date());
+    if (4<=hour&&hour<=11){
+      wx.setNavigationBarTitle({
+        title: "早安",
+      })
+    }else if(11<=hour&&hour<=15){
+      wx.setNavigationBarTitle({
+        title: "午安",
+      })
+    }else if(21<=hour||hour<=2){
+      wx.setNavigationBarTitle({
+        title: "晚安",
+      })
+    }else{
+      wx.setNavigationBarTitle({
+        title: "日签",
+      })
+    }
     let date = util.formatDate(new Date());
     this.setData({
       date: date

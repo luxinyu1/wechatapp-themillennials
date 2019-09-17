@@ -14,7 +14,7 @@ Page({
    */
   onLoad: function() {
     wx.setNavigationBarTitle({
-      title: "往期推送"
+      title: "主页"
     })
     let that = this;
     wx.showLoading({
