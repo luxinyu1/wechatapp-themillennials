@@ -14,7 +14,7 @@ Page({
    */
   onLoad: function() {
     wx.setNavigationBarTitle({
-      title: "主页"
+      title: "21世纪旗手"
     })
     let that = this;
     wx.showLoading({
